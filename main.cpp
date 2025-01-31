@@ -2,20 +2,24 @@
 
 #include <iostream>
 #include <string>
+#include <time.h>
 using namespace std;
+
 
 
 // υλοποίηση για τις κάρτες
 class Card{
 public:
     Card(){
-        cout << "New card created" << endl;
+        cout << "New card created!" << endl;
     }
-    Card(string user, string question, string answer){
+
+    Card(string question, string answer){
         Question = question;
         Answer = answer;
     }
 
+    // getters and setters for private
     string getQuestion(){
         return Question;
     }
@@ -32,7 +36,7 @@ public:
         Answer = answer;
     }
 
-    // show q and a 
+    // show question and answer 
     void Show(){
         if(Question.empty()){
             cerr << "This field must not be empty" << endl;
@@ -50,8 +54,9 @@ public:
 
     // save a card to a database SQLite implementation
     void Save(){
-        cout << "Saved! " << endl;
+
     }
+
 
 
 private:
@@ -60,28 +65,38 @@ private:
 };
 
 
-// υλοποίηση για τις συλλογές καρτών
-class Decks:Card {
-    Decks(){}
+
+// υλοποίηση για τις συλλογές καρτών (decks)
+// διαχείριση καρτών
+class Deck{
+public:
+    Deck(){}
+    
+};
+
+// μελέτη με χρονική επανάληψη 
+class Study{
+public:
+    Study(){}
+
 };
 
 
-// μελέτη με χρονική επανάληψη 
-class Time:Card{
-    Time(){}
+class Statistics{
+public:
+    Statistics(){}
+
+
 };
 
 
 // Main συνάρτηση
 int main() {
-    
-    Card card1;
-    Card card2;
-    
-    card1.setQuestion("blabla");
-    card1.Show();
-    
-
-
+    Card c1;
+    c1.setQuestion("Hey there?");
+    c1.setAnswer("there?");
+    c1.Show();
     return 0;
 }
+
+
