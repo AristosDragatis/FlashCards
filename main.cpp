@@ -2,26 +2,24 @@
 
 #include <iostream>
 #include <string>
-#include <time.h>
+#include <ctime>
 #include <vector>
 using namespace std;
-
 
 
 // υλοποίηση για τις κάρτες
 class Card{
 public:
-    Card(){
-        cout << "New card created!" << endl;
-    }
+    Card(){}
 
     Card(string question, string answer){
         Question = question;
         Answer = answer;
     }
 
-    // getters and setters for private
-    string getQuestion(){
+
+    // getters and setters
+    string getQuestion() const{
         return Question;
     }
 
@@ -29,7 +27,7 @@ public:
         Question = question;
     }
 
-    string getAnswer(){
+    string getAnswer() const{
         return Answer;
     }
 
@@ -38,28 +36,24 @@ public:
     }
 
 
-    // show question and answer 
-    void Show(){
+    // show question
+    void ShowQuestion(){
         if(Question.empty()){
             cerr << "This field must not be empty" << endl;
             return;
         }   
         else
-            cout << "Question: " <<  Question << endl;
+            cout << "Question: " <<  getQuestion() << endl;
+    }
 
+    // show answer
+    void ShowAnswer(){
         if(!Answer.empty())
-            cout << "Answer: " <<  Answer << endl;
+            cout << "Answer: " <<  getAnswer() << endl;
         else
             cout << " " << endl;
     }
 
-
-
-
-    // save a card to a database SQLite implementation
-    void Save(){
-
-    }
 
 private:
     string Question;
@@ -74,20 +68,21 @@ class Deck{
 public:
     Deck(){}
     vector<Card> vec; // temp saving the cards 
+    
 
-
-    void add2vec(Card card){
+    void add2deck(Card card){
         vec.push_back(card);
     }
 
 
-    void print_vec(){
+    void print_deck(){
         if (vec.empty()) {
         cout << "The deck is empty!" << endl;
     } else {
         cout << "Cards in the deck:" << endl;
         for (auto& card : vec) {
-            card.Show();
+            card.ShowQuestion();
+            card.ShowAnswer();
         }
     }
     }
@@ -110,10 +105,32 @@ public:
 
 
     // Deleting the deck
-    void delete_vec(){
+    void delete_deck(){
         vec.clear();
         cout << "Deck is deleted!" << endl;
     }
+
+
+    // updating the cards in the vector
+    void update_deck(Card& card, const string& newQuestion, const string& newAnswer){
+    for(auto it = vec.begin(); it != vec.end(); ++it){
+            
+            if (!newQuestion.empty() && newQuestion != it->getQuestion()) {
+                it->setQuestion(newQuestion);
+            }
+
+            if (!newAnswer.empty() && newAnswer != it->getAnswer()) {
+                it->setAnswer(newAnswer);
+            }
+
+            cout << "Card updated!" << endl;
+            return;
+        }
+        cout << "Card not found!" << endl;  
+    }
+
+
+
 };
 
 
@@ -122,7 +139,10 @@ public:
 class Study{
 public:
     Study(){}
+    // όσο υπάρχουν τα αντικείμενα της deck και της card τοσο θα μετράω το χρόνο τους
 
+      
+    
 };
 
 
@@ -131,8 +151,6 @@ public:
 class Statistics{
 public:
     Statistics(){}
-
-
 };
 
 
@@ -144,23 +162,21 @@ int main() {
     Card c2;
 
     // setting the questions and answers of the cards
-    c1.setQuestion("Hey there?");
-    c1.setAnswer("there?");
-    c2.setQuestion("c2 q");
-    c2.setAnswer("c2 a");
+
+    c1.setQuestion("initial?");
+    c1.setAnswer("sample");
+    d1.add2deck(c1);
+    d1.print_deck();
 
 
-    // printing the contents of the card
-    c1.Show();
-    c2.Show();
-
-    // adding to a deck
-    d1.add2vec(c1);
-    // printing the deck
-    d1.add2vec(c2);
-    d1.print_vec();
-    d1.delete_vec();
-    d1.print_vec();
+    c1.setQuestion("new question");
+    c1.ShowQuestion();
+    c1.ShowAnswer();
+    d1.update_deck(c1, c1.getQuestion(), c1.getAnswer());
+    d1.print_deck();
+    d1.delete_deck();
+    d1.print_deck();
+    
 
     return 0;
 }
