@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named SQLite3
+
+# Build rule for target.
+SQLite3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SQLite3
+.PHONY : SQLite3
+
+# fast build rule for target.
+SQLite3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SQLite3.dir\build.make CMakeFiles/SQLite3.dir/build
+.PHONY : SQLite3/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -152,6 +165,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sqlite3/sqlite3.obj: sqlite3/sqlite3.c.obj
+.PHONY : sqlite3/sqlite3.obj
+
+# target to build an object file
+sqlite3/sqlite3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SQLite3.dir\build.make CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj
+.PHONY : sqlite3/sqlite3.c.obj
+
+sqlite3/sqlite3.i: sqlite3/sqlite3.c.i
+.PHONY : sqlite3/sqlite3.i
+
+# target to preprocess a source file
+sqlite3/sqlite3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SQLite3.dir\build.make CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.i
+.PHONY : sqlite3/sqlite3.c.i
+
+sqlite3/sqlite3.s: sqlite3/sqlite3.c.s
+.PHONY : sqlite3/sqlite3.s
+
+# target to generate assembly for a file
+sqlite3/sqlite3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SQLite3.dir\build.make CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.s
+.PHONY : sqlite3/sqlite3.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -160,10 +197,14 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... SQLite3
 	@echo ... main
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... sqlite3/sqlite3.obj
+	@echo ... sqlite3/sqlite3.i
+	@echo ... sqlite3/sqlite3.s
 .PHONY : help
 
 

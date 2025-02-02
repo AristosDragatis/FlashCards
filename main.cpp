@@ -4,6 +4,7 @@
 #include <string>
 #include <ctime>
 #include <vector>
+#include <sqlite3.h>
 using namespace std;
 
 
@@ -16,6 +17,7 @@ public:
         Question = question;
         Answer = answer;
     }
+
 
 
     // getters and setters
@@ -55,6 +57,7 @@ public:
     }
 
 
+
 private:
     string Question;
     string Answer;
@@ -67,6 +70,10 @@ private:
 class Deck{
 public:
     Deck(){}
+
+    Deck (string Name) {
+        name = Name;
+    }
     vector<Card> vec; // temp saving the cards 
     
 
@@ -130,53 +137,99 @@ public:
     }
 
 
+    string getName(){
+        cout << name << endl;
+        return name;
+    }
 
+    void setName(string Name){
+        name = Name;
+    }
+
+
+private:
+    string name;
 };
 
 
-
-// μελέτη με χρονική επανάληψη 
+// μελέτη με χρονική επανάληψη και στατιστικά  
 class Study{
 public:
     Study(){}
-    // όσο υπάρχουν τα αντικείμενα της deck και της card τοσο θα μετράω το χρόνο τους
 
-      
-    
+
+    void startTime(){
+        startTimer = clock();
+    }
+
+
+    void stopTime(){
+        clock_t endTime = clock();
+        double total = (double)(endTime - startTimer)/ CLOCKS_PER_SEC;
+        timePerCard.push_back(total); // προσθέτουμε στο vector το χρόνο ανα κάρτα
+        totalTime += total;
+        cardCounter++;
+    }
+
+
+    // εμφάνιση στατιστικών
+    void showStatistics(){
+        cout << "Total study time: " << totalTime << " seconds" << endl;
+        cout << "Total cards read: " << cardCounter << endl;
+        if(cardCounter > 0) {
+            cout << "Time per card: " << (totalTime / cardCounter) << " seconds" << endl;
+        }
+    }
+
+
+private:
+    clock_t startTimer; // ξεκίνημα χρόνου
+    int cardCounter=0; // μετράει πόσες κάρτες διαβάστηκαν μέχρι στιγμής
+    double totalTime = 0.0;
+    vector<double> timePerCard; // χρόνος ανά κάρτα
 };
 
-
-// με timeit θα αποθηκεύω πόσο χρόνο κάνει στην κάθε κάρτα
-// και θα εμφανίζω τα συνολικά στατιστικά και της κάθε κάρτας
-class Statistics{
-public:
-    Statistics(){}
-};
 
 
 // Main συνάρτηση
 int main() {
-    // creating the objects 
+    // Κάποιες δοκιμές 
+    Study s1;
+    Study s2;
     Card c1;
-    Deck d1;
     Card c2;
+    Deck d1;
+    Deck d2;
 
-    // setting the questions and answers of the cards
+    // κάρτα 1
+    s1.startTime();  // Ξεκινάει το χρονόμετρο για την πρώτη κάρτα
+    c1.setQuestion("This is a question");
+    cout << "Press Enter to see the answer ..." << endl;
+    cin.get();  
+    c1.setAnswer("This is an answer");
+    d1.add2deck(c1);  // Προσθέτει την κάρτα στο deck
+    d1.print_deck();  
+    s1.stopTime();  // Σταματά το χρονόμετρο
+    s1.showStatistics();  // Εμφανίζει τα στατιστικά 
 
-    c1.setQuestion("initial?");
-    c1.setAnswer("sample");
-    d1.add2deck(c1);
-    d1.print_deck();
+    // καρτα 2
+    s1.startTime();  // Ξεκινάει το χρονόμετρο για την δεύτερη κάρτα
+    c2.setQuestion("This is a question two");
+    cout << "Press Enter to see the answer ..." << endl;
+    cin.get();  
+    c2.setAnswer("This is an answer two");
+    d1.add2deck(c2);  // Προσθέτει την δεύτερη κάρτα στο deck
+    d1.print_deck();  
+    s1.stopTime();  // Σταματά το χρονόμετρο
+    s1.showStatistics();  // Εμφανίζει τα στατιστικά
 
 
-    c1.setQuestion("new question");
-    c1.ShowQuestion();
-    c1.ShowAnswer();
-    d1.update_deck(c1, c1.getQuestion(), c1.getAnswer());
-    d1.print_deck();
-    d1.delete_deck();
-    d1.print_deck();
-    
+    // δοκιμή για ορισμό ονόματος σε κάθε deck
+    d1.setName("mydeck");
+    d1.getName();
+
+    d2.setName("mydeck2");
+    d2.getName();
 
     return 0;
 }
