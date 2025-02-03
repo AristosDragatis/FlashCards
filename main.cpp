@@ -5,7 +5,7 @@
 #include <vector>
 #include <sqlite3.h>
 
-
+// choices on how difficult a card was
 #define again 1
 #define hard 2
 #define good 3
@@ -13,18 +13,23 @@
 using namespace std;
 
 
+// initializing database logic
+static int createDB(const char* s);
+static int createTable(const char* s);
+
+
+
 // υλοποίηση για τις κάρτες
 class Card{
 public:
     Card(){}
-
     Card(string question, string answer){
         Question = question;
         Answer = answer;
     }
 
 
-    // getters and setters
+    // getters and setters for question and answer
     string getQuestion(){
         return Question;
     }
@@ -41,7 +46,7 @@ public:
         Answer = answer;
     }
 
-
+    // deleting a card
     void deleteCard(){
         setQuestion("");
         setAnswer("");
@@ -66,6 +71,10 @@ public:
             cout << " " << endl;
     }
 
+
+    // based on the difficulty input of the user . A score (in seconds) is given to the card.
+    // it is based on the repeat strategy 
+    // if a card is considered easy will take 4 days (in seconds) to re-appear.
     void setScore(double score){
         Score = score; 
     }
@@ -95,12 +104,12 @@ public:
     }
     vector<Card> vec; // temp saving the cards 
     
-
+    // adding a card to deck
     void add2deck(Card card){
         vec.push_back(card);
     }
 
-
+    // print the contents of the deck
     void print_deck(){
         if (vec.empty()) {
         cout << "The deck is empty!" << endl;
@@ -157,12 +166,14 @@ public:
         cout << "Card not found!" << endl;  
     }
 
-
+    
+    // get the name of the deck
     string getName(){
         cout << name << endl;
         return name;
     }
 
+    // set the name of the deck
     void setName(string Name){
         name = Name;
     }
@@ -179,15 +190,17 @@ public:
     Study(){}
     double score = 0.0; // repeat score
 
+    // start the timer
     void startTime(){
         startTimer = clock();
     }
 
 
+    // stop the timer
     void stopTime(){
         clock_t endTime = clock();
         double total = (double)(endTime - startTimer)/ CLOCKS_PER_SEC;
-        timePerCard.push_back(total); // προσθέτουμε στο vector το χρόνο ανα κάρτα
+        timePerCard.push_back(total); 
         totalTime += total;
         cardCounter++;
     }
@@ -198,15 +211,13 @@ public:
         cout << "Total study time: " << totalTime << " seconds" << endl;
         cout << "Total cards read: " << cardCounter << endl;
         if(cardCounter > 0) {
-            cout << "Time per card: " << (totalTime / cardCounter) << " seconds" << endl;
+            double time_per_card = (totalTime / cardCounter);
+            cout << "Time per card: " << time_per_card << " seconds" << endl;
         }
     }
 
-
-    // **********
-    // υλοποίηση για repeat-strategy (χρόνος που προστίθεται ανάλογα με το αν ο χρήστης πατήσει εύκολο ή δύσκολο)
-    // **********
     
+    // repeat - strategy
     // αρχική υλοποίηση με switch 
     // λειτουργεί οκ
     void repeat(Card card, int input){
@@ -235,67 +246,90 @@ private:
     clock_t startTimer; // ξεκίνημα χρόνου
     int cardCounter=0; // μετράει πόσες κάρτες διαβάστηκαν μέχρι στιγμής
     double totalTime = 0.0;
-    vector<double> timePerCard; // χρόνος ανά κάρτα
+    vector<double> timePerCard; 
 };
 
 
 // Main συνάρτηση
 int main() {
-    // Κάποιες δοκιμές 
-    Study s1;
-    Study s2;
-    Card c1;
-    Card c2;
-    Card c3;
-    Deck d1;
-    Deck d2;
 
-    // κάρτα 1
-    s1.startTime();  // Ξεκινάει το χρονόμετρο για την πρώτη κάρτα
-    c1.setQuestion("This is a question");
-    cout << "Press Enter to see the answer ..." << endl;
-    cin.get();  
-    c1.setAnswer("This is an answer");
-    d1.add2deck(c1);  // Προσθέτει την κάρτα στο deck
-    d1.print_deck();  
-    s1.stopTime();  // Σταματά το χρονόμετρο
-    s1.showStatistics();  // Εμφανίζει τα στατιστικά 
-
-    // καρτα 2
-    s1.startTime();  // Ξεκινάει το χρονόμετρο για την δεύτερη κάρτα
-    c2.setQuestion("This is a question two");
-    cout << "Press Enter to see the answer ..." << endl;
-    cin.get();  
-    c2.setAnswer("This is an answer two");
-    d1.add2deck(c2);  // Προσθέτει την δεύτερη κάρτα στο deck
-    d1.print_deck();  
-    s1.stopTime();  // Σταματά το χρονόμετρο
-    s1.showStatistics();  // Εμφανίζει τα στατιστικά
-
-
-    s1.startTime();
-    c3.setQuestion("What is programming? ");
-    cout << "Press Enter" << endl;
-    cin.get();
-    c3.setAnswer("Programming is .. ");
-    d1.add2deck(c3);
-    d1.print_deck();
-    s1.stopTime();
-    s1.showStatistics();
+    const char* dir = "c:/MyDatabase/FLASHCARDS.db";
+    sqlite3* DB;
+    createDB(dir);
+    createTable(dir);
     
-
-    // δοκιμή για ορισμό ονόματος σε κάθε deck
-    d1.setName("mydeck");
-    d1.getName();
-
-    d2.setName("mydeck2");
-    d2.getName();
-
-    s1.repeat(c1, 2);
-    cout << s1.score << endl;
-    cout << s2.score << endl;
 
     return 0;
 }
+
+
+// implementation of the sqlite logic
+// function to create/open the database 
+static int createDB(const char* s) {
+    sqlite3* DB;
+    int exit = sqlite3_open(s, &DB);
+
+    if (exit) {
+        cerr << "Error opening database: " << sqlite3_errmsg(DB) << endl;
+        return exit;
+    } else {
+        cout << "Database created/opened successfully!" << endl;
+    }
+
+    sqlite3_close(DB);
+    return 0;
+}
+
+
+// function to create table in the database 
+static int createTable(const char* s) {
+    sqlite3* DB;
+    char* messageError;
+
+    int exit = sqlite3_open(s, &DB);
+    if (exit) {
+        cerr << "Error opening database: " << sqlite3_errmsg(DB) << endl;
+        return exit;
+    }
+
+    // table DECKS
+    string sql_decks = "CREATE TABLE IF NOT EXISTS DECKS ("
+                       "ID INTEGER PRIMARY KEY AUTOINCREMENT, "
+                       "NAME TEXT UNIQUE NOT NULL );";
+
+    // table CARDS
+    string sql_cards = "CREATE TABLE IF NOT EXISTS CARDS ("
+                       "ID INTEGER PRIMARY KEY AUTOINCREMENT, "
+                       "DECK_ID INTEGER, "
+                       "QUESTION TEXT NOT NULL, "
+                       "ANSWER TEXT NOT NULL, "
+                       "FOREIGN KEY (DECK_ID) REFERENCES DECKS(ID) ON DELETE CASCADE );";
+
+    // table STUDY
+    string sql_study = "CREATE TABLE IF NOT EXISTS STUDY("
+                       "ID INTEGER PRIMARY KEY AUTOINCREMENT, "
+                       "CARD_ID INTEGER, "
+                       "TOTAL_TIME REAL, "
+                       "TIME_PER_CARD REAL, "
+                       "CARDS_VIEWED   INTEGER DEFAULT 0, "
+                       "FOREIGN KEY (CARD_ID) REFERENCES CARDS(ID) ON DELETE CASCADE );";
+
+    // execute one by one 
+    string queries[] = {sql_decks, sql_cards, sql_study};
+
+    for (const string& query : queries) {
+        exit = sqlite3_exec(DB, query.c_str(), 0, 0, &messageError);
+        if (exit != SQLITE_OK) {
+            cerr << "SQL Error: " << messageError << endl;
+            sqlite3_free(messageError);
+        } else {
+            cout << "Table created successfully: " << query << endl;
+        }
+    }
+
+    sqlite3_close(DB);
+    return 0;
+}
+
 
 
