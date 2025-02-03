@@ -1,10 +1,15 @@
 // flashcards project
-
 #include <iostream>
 #include <string>
 #include <ctime>
 #include <vector>
 #include <sqlite3.h>
+
+
+#define again 1
+#define hard 2
+#define good 3
+#define easy 4
 using namespace std;
 
 
@@ -19,9 +24,8 @@ public:
     }
 
 
-
     // getters and setters
-    string getQuestion() const{
+    string getQuestion(){
         return Question;
     }
 
@@ -29,12 +33,18 @@ public:
         Question = question;
     }
 
-    string getAnswer() const{
+    string getAnswer(){
         return Answer;
     }
 
     void setAnswer(string answer){
         Answer = answer;
+    }
+
+
+    void deleteCard(){
+        setQuestion("");
+        setAnswer("");
     }
 
 
@@ -45,15 +55,24 @@ public:
             return;
         }   
         else
-            cout << "Question: " <<  getQuestion() << endl;
+            cout << "Question: " <<  Question << endl;
     }
 
     // show answer
     void ShowAnswer(){
         if(!Answer.empty())
-            cout << "Answer: " <<  getAnswer() << endl;
+            cout << "Answer: " <<  Answer << endl;
         else
             cout << " " << endl;
+    }
+
+    void setScore(double score){
+        Score = score; 
+    }
+
+
+    double getScore(){
+        return Score;
     }
 
 
@@ -61,8 +80,8 @@ public:
 private:
     string Question;
     string Answer;
+    double Score = 0.0;
 };
-
 
 
 // υλοποίηση για τις συλλογές καρτών (decks)
@@ -91,6 +110,7 @@ public:
             card.ShowQuestion();
             card.ShowAnswer();
         }
+        cout << "---------------------------------" << endl;
     }
     }
 
@@ -98,6 +118,7 @@ public:
     // delete a card from the deck
     void delete_element(Card card){
         // delete the position of the card
+
         for(auto it = vec.begin(); it != vec.end();){
             if(it ->getQuestion() == card.getQuestion() && it->getAnswer() == card.getAnswer()){
                 it = vec.erase(it); 
@@ -118,7 +139,7 @@ public:
     }
 
 
-    // updating the cards in the vector
+    // updating the cards in the vector (question or answer)
     void update_deck(Card& card, const string& newQuestion, const string& newAnswer){
     for(auto it = vec.begin(); it != vec.end(); ++it){
             
@@ -156,7 +177,7 @@ private:
 class Study{
 public:
     Study(){}
-
+    double score = 0.0; // repeat score
 
     void startTime(){
         startTimer = clock();
@@ -182,13 +203,40 @@ public:
     }
 
 
+    // **********
+    // υλοποίηση για repeat-strategy (χρόνος που προστίθεται ανάλογα με το αν ο χρήστης πατήσει εύκολο ή δύσκολο)
+    // **********
+    
+    // αρχική υλοποίηση με switch 
+    // λειτουργεί οκ
+    void repeat(Card card, int input){
+        switch(input){
+            case 1:
+                card.setScore(60);
+                score = card.getScore();
+                break;
+            case 2:
+                card.setScore(360);
+                score = card.getScore();
+                break;
+            case 3:
+                card.setScore(600);
+                score = card.getScore();
+                break;
+            case 4:
+                card.setScore(345600);
+                score = card.getScore();
+                break;
+        } 
+    }
+
+
 private:
     clock_t startTimer; // ξεκίνημα χρόνου
     int cardCounter=0; // μετράει πόσες κάρτες διαβάστηκαν μέχρι στιγμής
     double totalTime = 0.0;
     vector<double> timePerCard; // χρόνος ανά κάρτα
 };
-
 
 
 // Main συνάρτηση
@@ -198,6 +246,7 @@ int main() {
     Study s2;
     Card c1;
     Card c2;
+    Card c3;
     Deck d1;
     Deck d2;
 
@@ -224,12 +273,27 @@ int main() {
     s1.showStatistics();  // Εμφανίζει τα στατιστικά
 
 
+    s1.startTime();
+    c3.setQuestion("What is programming? ");
+    cout << "Press Enter" << endl;
+    cin.get();
+    c3.setAnswer("Programming is .. ");
+    d1.add2deck(c3);
+    d1.print_deck();
+    s1.stopTime();
+    s1.showStatistics();
+    
+
     // δοκιμή για ορισμό ονόματος σε κάθε deck
     d1.setName("mydeck");
     d1.getName();
 
     d2.setName("mydeck2");
     d2.getName();
+
+    s1.repeat(c1, 2);
+    cout << s1.score << endl;
+    cout << s2.score << endl;
 
     return 0;
 }
