@@ -112,7 +112,8 @@ CMakeFiles/main.dir/main.cpp.obj: C:/Users/Aristos/Desktop/DIT/oop/ergasia/main.
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/vector \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
+  C:/Users/Aristos/Desktop/DIT/oop/ergasia/sqlite3/sqlite3.h
 
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/ctype_base.h:
@@ -336,3 +337,5 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits:
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/vector:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h:
+
+C:/Users/Aristos/Desktop/DIT/oop/ergasia/sqlite3/sqlite3.h:
