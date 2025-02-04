@@ -13,9 +13,6 @@
 using namespace std;
 
 
-// initializing database logic
-static int createDB(const char* s);
-static int createTable(const char* s);
 
 
 
@@ -31,7 +28,7 @@ public:
 
     // getters and setters for question and answer
     string getQuestion(){
-        return Question;
+        return Question.c_str();
     }
 
     void setQuestion(string question){
@@ -39,7 +36,7 @@ public:
     }
 
     string getAnswer(){
-        return Answer;
+        return Answer.c_str();
     }
 
     void setAnswer(string answer){
@@ -97,12 +94,26 @@ private:
 // διαχείριση καρτών
 class Deck{
 public:
-    Deck(){}
+    Deck(){
+        int deck_id = -1;
+    }
 
     Deck (string Name) {
         name = Name;
+        int deck_id = -1;
     }
     vector<Card> vec; // temp saving the cards 
+    
+
+    void setDeckID(int id){
+        deck_id = id;
+    }
+
+
+    int getDeckID(){
+        return deck_id;
+    }
+
     
     // adding a card to deck
     void add2deck(Card card){
@@ -181,6 +192,7 @@ public:
 
 private:
     string name;
+    int deck_id;
 };
 
 
@@ -250,13 +262,56 @@ private:
 };
 
 
+
+// initializing database logic
+static int createDB(const char* s);
+static int createTable(const char* s);
+static int insertDeck(sqlite3* DB, Deck &deck);
+static int insertCard(sqlite3* DB, int deck_id, const string& question, const string& answer);
+
 // Main συνάρτηση
 int main() {
+    Deck d1;
+    Deck d2;
+    Card c1;
+    Card c2;
 
+    c1.setQuestion("This is a question?");
+    c1.setAnswer("This is an answer!");
+    c2.setQuestion("Why do you love programming?");
+    c2.setAnswer("Because it feels like a game!");
+    d1.setName("mydeck4");
+    d2.setName("d2deck");
+    
+
+    // initializing the database
     const char* dir = "c:/MyDatabase/FLASHCARDS.db";
     sqlite3* DB;
     createDB(dir);
     createTable(dir);
+
+    int exit = sqlite3_open(dir, &DB);
+    if (exit) {
+        cerr << "Error opening database: " << sqlite3_errmsg(DB) << endl;
+        return exit;
+    }
+
+
+    d1.setDeckID(1);
+    d2.setDeckID(2);
+    cout << "d1 deck id: " << d1.getDeckID() << endl;
+    cout << "d2 deck id: " << d2.getDeckID() << endl;
+    
+
+    // inserting a card to the database with deck id = 1
+    insertCard(DB, d1.getDeckID(), c1.getQuestion(), c1.getAnswer());
+    insertCard(DB, d2.getDeckID(), c1.getQuestion(), c1.getAnswer());
+
+    insertCard(DB, d1.getDeckID(), c2.getQuestion(), c2.getAnswer());
+    insertCard(DB, d2.getDeckID(), c2.getQuestion(), c2.getAnswer());
+
+
+    sqlite3_close(DB);
     
 
     return 0;
@@ -317,18 +372,80 @@ static int createTable(const char* s) {
     // execute one by one 
     string queries[] = {sql_decks, sql_cards, sql_study};
 
-    for (const string& query : queries) {
+    for (string& query : queries) {
         exit = sqlite3_exec(DB, query.c_str(), 0, 0, &messageError);
         if (exit != SQLITE_OK) {
             cerr << "SQL Error: " << messageError << endl;
             sqlite3_free(messageError);
         } else {
-            cout << "Table created successfully: " << query << endl;
+            cout << "Table created successfully" << endl;
         }
     }
 
     sqlite3_close(DB);
     return 0;
+}
+
+
+static int insertDeck(sqlite3* DB, Deck &deck) {
+    string sql = "INSERT INTO DECKS (NAME) VALUES (?);";
+    sqlite3_stmt* stmt;
+
+    int exit = sqlite3_prepare_v2(DB, sql.c_str(), -1, &stmt, nullptr);
+    if (exit != SQLITE_OK) {
+        cerr << "Error preparing statement: " << sqlite3_errmsg(DB) << endl;
+        return exit;
+    }
+
+    sqlite3_bind_text(stmt, 1, deck.getName().c_str(), -1, SQLITE_STATIC);
+
+    exit = sqlite3_step(stmt);
+    if (exit != SQLITE_DONE) {
+        cerr << "Error inserting data: " << sqlite3_errmsg(DB) << endl;
+    } else {
+        cout << "Deck inserted successfully!" << endl;
+
+        int new_id = sqlite3_last_insert_rowid(DB);
+        deck.setDeckID(new_id);
+    }
+
+    sqlite3_finalize(stmt);
+    return exit;
+}
+
+
+
+static int insertCard(sqlite3* DB,int deck_id, const string& question, const string& answer)
+{
+    string sql = "INSERT INTO CARDS(DECK_ID, QUESTION, ANSWER) VALUES(?, ?, ?);";
+
+    sqlite3_stmt* stmt; // use prepared statement
+
+    int exit = sqlite3_prepare_v2(DB, sql.c_str(), -1, &stmt, nullptr);
+    if(exit != SQLITE_OK)
+    {
+        cerr << "Error preparing statement: " << sqlite3_errmsg(DB) << endl;
+        return exit;
+    }
+
+    
+    // allocate 
+    sqlite3_bind_int(stmt, 1, deck_id);
+    sqlite3_bind_text(stmt, 2, question.c_str(), -1, SQLITE_STATIC);
+    sqlite3_bind_text(stmt, 3, answer.c_str(), -1, SQLITE_STATIC);
+
+    exit = sqlite3_step(stmt);
+    if(exit != SQLITE_DONE)
+    {
+        cerr << "Error inserting data: " << sqlite3_errmsg(DB) << endl;
+
+    }else
+    {
+        cout << "Card inserted successfully!" << endl;
+    }
+
+    sqlite3_finalize(stmt);
+    return exit;
 }
 
 
