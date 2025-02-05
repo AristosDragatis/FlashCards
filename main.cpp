@@ -93,23 +93,23 @@ private:
 class Deck{
 public:
     Deck(){
-        int deck_id = -1;
+        this->deck_id = -1;
     }
 
     Deck (string Name) {
-        name = Name;
-        int deck_id = -1;
+        this->name = Name;
+        this->deck_id = -1;
     }
     vector<Card> vec; // temp saving the cards 
     
 
     void setDeckID(int id){
-        deck_id = id;
+        this->deck_id = id;
     }
 
 
     int getDeckID(){
-        return deck_id;
+        return this->deck_id;
     }
 
     
@@ -267,10 +267,6 @@ int main() {
     Card c1;
     Card c2;
 
-    c1.setQuestion("This is a question?");
-    c1.setAnswer("This is an answer!");
-    c2.setQuestion("Why do you love programming?");
-    c2.setAnswer("Because it feels like a game!");
     d1.setName("mydeck4");
     d2.setName("d2deck");
     
@@ -292,6 +288,9 @@ int main() {
     d2.setDeckID(2);
     cout << "d1 deck id: " << d1.getDeckID() << endl;
     cout << "d2 deck id: " << d2.getDeckID() << endl;
+    Database::selectCard(DB, d2);
+
+
     sqlite3_close(DB);
     return 0;
 }

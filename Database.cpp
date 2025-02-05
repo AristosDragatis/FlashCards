@@ -5,12 +5,12 @@
 class Deck {
 public:
     Deck() { deck_id = -1; }
-    Deck(string Name) { name = Name; deck_id = -1; }
+    Deck(string Name) { this->name = Name; this->deck_id = -1; }
 
-    void setDeckID(int id) { deck_id = id; }
-    int getDeckID() const { return deck_id; }
+    void setDeckID(int id) { this->deck_id = id; }
+    int getDeckID() { return this->deck_id; }
 
-    string getName() const { return name; }
+    string getName() { return name; }
     void setName(string Name) { name = Name; }
 
 private:
@@ -148,3 +148,81 @@ int Database::insertCard(sqlite3* DB,int deck_id, const string& question, const 
     return exit;
 }
 
+
+int Database::selectDeck(sqlite3* DB){
+    string sql = "SELECT * FROM DECKS"; 
+
+    sqlite3_stmt* stmt;
+    int exit = sqlite3_prepare_v2(DB, sql.c_str(), -1, &stmt, nullptr);
+
+    if(exit != SQLITE_OK)
+    {
+        cerr << "Error preparing statement: " << sqlite3_errmsg(DB) << endl;
+        return exit;
+    }
+
+
+    while((exit = sqlite3_step(stmt)) == SQLITE_ROW)
+    {
+        int id = sqlite3_column_int(stmt, 0);
+        string deckName = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 1));
+
+        cout << "ID: " << id << "| Name: " << deckName << endl;
+    }
+
+    if(exit != SQLITE_DONE)
+    {
+        cerr << "Error selecting data: " << sqlite3_errmsg(DB) << endl;
+    }
+
+    sqlite3_finalize(stmt);
+    return exit == SQLITE_DONE ? SQLITE_OK : exit;
+}
+
+
+
+int Database::selectCard(sqlite3* DB, Deck &deck)
+{
+    string sql = "SELECT * FROM CARDS WHERE  deck_id = ?";
+    sqlite3_stmt* stmt;
+    int exit = sqlite3_prepare_v2(DB, sql.c_str(), -1, &stmt, nullptr);
+    
+
+    if(exit != SQLITE_OK)
+    {
+        cerr << "Error preparing statement: " << sqlite3_errmsg(DB) << endl;
+        return exit;
+    }
+
+    int deckID = deck.getDeckID();
+    cout << "DECK id: " << deckID << endl;
+    sqlite3_bind_int(stmt, 1, deckID);
+
+
+    bool found = false;
+    while((exit = sqlite3_step(stmt)) == SQLITE_ROW)
+    {
+        found = true;
+        int id = sqlite3_column_int(stmt, 0);
+        string question = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 2));
+        string answer = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 3));
+
+
+        cout << "Card id: " << id << " |  Q: " << question << " |  A: " << answer << endl;
+
+    }
+
+
+    if (!found) {
+    cout << "No cards found for deck_id: " << deck.getDeckID() << endl;
+    }
+
+
+    if(exit != SQLITE_DONE)
+    {
+        cerr << "Error selecting data: " << sqlite3_errmsg(DB) << endl;
+    }
+
+    sqlite3_finalize(stmt);
+    return (exit == SQLITE_DONE || exit == SQLITE_ROW) ? SQLITE_OK : exit;
+}
