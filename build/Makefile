@@ -141,6 +141,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Database.obj: Database.cpp.obj
+.PHONY : Database.obj
+
+# target to build an object file
+Database.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Database.cpp.obj
+.PHONY : Database.cpp.obj
+
+Database.i: Database.cpp.i
+.PHONY : Database.i
+
+# target to preprocess a source file
+Database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Database.cpp.i
+.PHONY : Database.cpp.i
+
+Database.s: Database.cpp.s
+.PHONY : Database.s
+
+# target to generate assembly for a file
+Database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Database.cpp.s
+.PHONY : Database.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -199,6 +223,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... SQLite3
 	@echo ... main
+	@echo ... Database.obj
+	@echo ... Database.i
+	@echo ... Database.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

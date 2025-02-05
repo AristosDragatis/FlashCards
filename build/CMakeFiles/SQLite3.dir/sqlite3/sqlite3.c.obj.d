@@ -1,5 +1,5 @@
 CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj: \
- C:\Users\Aristos\Desktop\DIT\oop\ergasia\sqlite3\sqlite3.c \
+ C:\Users\Aristos\Desktop\DIT\OOP\ergasia\sqlite3\sqlite3.c \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h c:\mingw\include\stdio.h \
  c:\mingw\include\_mingw.h c:\mingw\include\msvcrtver.h \
  c:\mingw\include\w32api.h c:\mingw\include\sdkddkver.h \
