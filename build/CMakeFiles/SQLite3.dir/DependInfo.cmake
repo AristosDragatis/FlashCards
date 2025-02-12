@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Aristos/Desktop/DIT/OOP/ergasia/sqlite3/sqlite3.c" "CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj" "gcc" "CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj.d"
+  "C:/Users/draga/Desktop/DIT/OOP/FlashCards/sqlite3/sqlite3.c" "CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj" "gcc" "CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

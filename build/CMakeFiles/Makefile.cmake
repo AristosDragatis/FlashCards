@@ -23,7 +23,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake"
-  "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake"
@@ -40,11 +39,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake"
-  "C:/Users/Aristos/Desktop/DIT/OOP/ergasia/CMakeLists.txt"
-  "CMakeFiles/3.31.0-rc1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.31.0-rc1/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.31.0-rc1/CMakeRCCompiler.cmake"
-  "CMakeFiles/3.31.0-rc1/CMakeSystem.cmake"
+  "C:/Users/draga/Desktop/DIT/OOP/FlashCards/CMakeLists.txt"
+  "CMakeFiles/3.31.3/CMakeCCompiler.cmake"
+  "CMakeFiles/3.31.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.31.3/CMakeRCCompiler.cmake"
+  "CMakeFiles/3.31.3/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:
