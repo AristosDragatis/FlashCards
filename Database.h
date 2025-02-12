@@ -18,6 +18,9 @@ public:
     static int insertCard(sqlite3* DB, int deck_id, const string& question, const string& answer);
     static int selectDeck(sqlite3* DB);
     static int selectCard(sqlite3* DB, Deck &deck);
+    static bool tableExists(sqlite3* db, const std::string& tableName);
+    static void deleteDeck(sqlite3* db, int deckID);
+    static void deleteCard(sqlite3* db, int deckID, const string& question);
 };
 
 #endif
