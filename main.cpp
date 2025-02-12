@@ -92,21 +92,23 @@ private:
 // διαχείριση καρτών
 class Deck{
 public:
+    static int deckCounter; 
+
     Deck(){
-        this->deck_id = -1;
+        deck_id = ++deckCounter;
     }
+
 
     Deck (string Name) {
         this->name = Name;
-        this->deck_id = -1;
+        this->deck_id = ++deckCounter;
     }
+
+    ~Deck(){
+        deckCounter--;
+    }
+
     vector<Card> vec; // temp saving the cards 
-    
-
-    void setDeckID(int id){
-        this->deck_id = id;
-    }
-
 
     int getDeckID(){
         return this->deck_id;
@@ -188,10 +190,15 @@ public:
     }
 
 
+
+
 private:
     string name;
     int deck_id;
 };
+
+
+int Deck::deckCounter=0;
 
 
 // μελέτη με χρονική επανάληψη και στατιστικά  
@@ -260,6 +267,26 @@ private:
 };
 
 
+class User
+{
+public:
+    User(){}
+
+
+    string getName(){
+        return this->name; 
+    }
+
+    void setName(string name){
+        this->name = name;
+    }
+
+
+private:
+    string name;
+};
+
+
 // Main συνάρτηση
 int main() {
     Deck d1;
@@ -269,6 +296,8 @@ int main() {
 
     d1.setName("mydeck4");
     d2.setName("d2deck");
+    d1.getName();
+    d2.getName();
     
 
     // initializing the database
@@ -283,13 +312,16 @@ int main() {
         return exit;
     }
 
+    c1.setQuestion("this is a question");
+    c1.setAnswer("This is an answer!");
+    c2.setQuestion("this is question 2");
+    c2.setAnswer("this is answer 2");
 
-    d1.setDeckID(1);
-    d2.setDeckID(2);
-    cout << "d1 deck id: " << d1.getDeckID() << endl;
-    cout << "d2 deck id: " << d2.getDeckID() << endl;
-    Database::selectCard(DB, d2);
+    //Database::insertCard(DB, d1.getDeckID(), c1.getQuestion(), c1.getAnswer());
+    //Database::insertCard(DB, d1.getDeckID(), c2.getQuestion(), c2.getAnswer());
 
+
+    Database::deleteCard(DB, d1.getDeckID(), c2.getQuestion());
 
     sqlite3_close(DB);
     return 0;
