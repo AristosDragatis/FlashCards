@@ -1,3 +1,6 @@
+/* This file is the implementation of the Database logic
+ *
+ * */ 
 #include "Database.h"
 #include <iostream>
 

@@ -190,8 +190,6 @@ public:
     }
 
 
-
-
 private:
     string name;
     int deck_id;
@@ -270,10 +268,14 @@ private:
 class User
 {
 public:
-    User(){}
+    static int counter;
+    User(){
+        this->userId = ++counter; 
+    }
 
 
     string getName(){
+        cout << name << endl;
         return this->name; 
     }
 
@@ -281,25 +283,24 @@ public:
         this->name = name;
     }
 
+    int getUserId(){
+        return this->userId;
+    }
+
+    // implement deleting a user
+    // or implement it straight to the database
 
 private:
     string name;
+    int userId;
 };
+
+
+int User::counter = 0;
 
 
 // Main συνάρτηση
 int main() {
-    Deck d1;
-    Deck d2;
-    Card c1;
-    Card c2;
-
-    d1.setName("mydeck4");
-    d2.setName("d2deck");
-    d1.getName();
-    d2.getName();
-    
-
     // initializing the database
     const char* dir = "c:/MyDatabase/FLASHCARDS.db";
     sqlite3* DB;
@@ -312,16 +313,6 @@ int main() {
         return exit;
     }
 
-    c1.setQuestion("this is a question");
-    c1.setAnswer("This is an answer!");
-    c2.setQuestion("this is question 2");
-    c2.setAnswer("this is answer 2");
-
-    //Database::insertCard(DB, d1.getDeckID(), c1.getQuestion(), c1.getAnswer());
-    //Database::insertCard(DB, d1.getDeckID(), c2.getQuestion(), c2.getAnswer());
-
-
-    Database::deleteCard(DB, d1.getDeckID(), c2.getQuestion());
 
     sqlite3_close(DB);
     return 0;
