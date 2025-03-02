@@ -1,4 +1,4 @@
-C:/Users/draga/Desktop/DIT/OOP/FlashCards/build/CMakeFiles/SQLite3.dir
-C:/Users/draga/Desktop/DIT/OOP/FlashCards/build/CMakeFiles/main.dir
-C:/Users/draga/Desktop/DIT/OOP/FlashCards/build/CMakeFiles/edit_cache.dir
-C:/Users/draga/Desktop/DIT/OOP/FlashCards/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/SQLite3.dir
+C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/main.dir
+C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/edit_cache.dir
+C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/rebuild_cache.dir

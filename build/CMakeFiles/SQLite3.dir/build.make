@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\draga\Desktop\DIT\OOP\FlashCards
+CMAKE_SOURCE_DIR = C:\Users\Aristos\Desktop\DIT\OOP\ergasia
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\draga\Desktop\DIT\OOP\FlashCards\build
+CMAKE_BINARY_DIR = C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SQLite3.dir/depend.make
@@ -72,18 +72,18 @@ CMakeFiles/SQLite3.dir/codegen:
 .PHONY : CMakeFiles/SQLite3.dir/codegen
 
 CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj: CMakeFiles/SQLite3.dir/flags.make
-CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj: C:/Users/draga/Desktop/DIT/OOP/FlashCards/sqlite3/sqlite3.c
+CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj: C:/Users/Aristos/Desktop/DIT/OOP/ergasia/sqlite3/sqlite3.c
 CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj: CMakeFiles/SQLite3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\draga\Desktop\DIT\OOP\FlashCards\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj"
-	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj -MF CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.obj.d -o CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.obj -c C:\Users\draga\Desktop\DIT\OOP\FlashCards\sqlite3\sqlite3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj -MF CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.obj.d -o CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.obj -c C:\Users\Aristos\Desktop\DIT\OOP\ergasia\sqlite3\sqlite3.c
 
 CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.i"
-	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\draga\Desktop\DIT\OOP\FlashCards\sqlite3\sqlite3.c > CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Aristos\Desktop\DIT\OOP\ergasia\sqlite3\sqlite3.c > CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.i
 
 CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.s"
-	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\draga\Desktop\DIT\OOP\FlashCards\sqlite3\sqlite3.c -o CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Aristos\Desktop\DIT\OOP\ergasia\sqlite3\sqlite3.c -o CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.s
 
 # Object files for target SQLite3
 SQLite3_OBJECTS = \
@@ -95,7 +95,7 @@ SQLite3_EXTERNAL_OBJECTS =
 libSQLite3.a: CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj
 libSQLite3.a: CMakeFiles/SQLite3.dir/build.make
 libSQLite3.a: CMakeFiles/SQLite3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\draga\Desktop\DIT\OOP\FlashCards\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libSQLite3.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libSQLite3.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\SQLite3.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SQLite3.dir\link.txt --verbose=$(VERBOSE)
 
@@ -108,6 +108,6 @@ CMakeFiles/SQLite3.dir/clean:
 .PHONY : CMakeFiles/SQLite3.dir/clean
 
 CMakeFiles/SQLite3.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\draga\Desktop\DIT\OOP\FlashCards C:\Users\draga\Desktop\DIT\OOP\FlashCards C:\Users\draga\Desktop\DIT\OOP\FlashCards\build C:\Users\draga\Desktop\DIT\OOP\FlashCards\build C:\Users\draga\Desktop\DIT\OOP\FlashCards\build\CMakeFiles\SQLite3.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Aristos\Desktop\DIT\OOP\ergasia C:\Users\Aristos\Desktop\DIT\OOP\ergasia C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\CMakeFiles\SQLite3.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/SQLite3.dir/depend
 
