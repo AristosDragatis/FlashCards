@@ -3,7 +3,7 @@
  * */ 
 #include "Database.h"
 #include <iostream>
-
+#include "sqlite3/sqlite3.h"
 
 class Deck {
 public:

@@ -15,31 +15,28 @@
 ########################
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=C:/MinGW/bin/addr2line.exe
+CMAKE_ADDR2LINE:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/addr2line.exe
 
 //Path to a program.
-CMAKE_AR:FILEPATH=C:/MinGW/bin/ar.exe
+CMAKE_AR:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/ar.exe
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=
 
-//Enable colored diagnostics throughout.
-CMAKE_COLOR_DIAGNOSTICS:BOOL=1
-
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=C:/MinGW/bin/c++.exe
+CMAKE_CXX_COMPILER:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/c++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=C:/MinGW/bin/gcc-ar.exe
+CMAKE_CXX_COMPILER_AR:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/MinGW/bin/gcc-ranlib.exe
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/gcc-ranlib.exe
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -60,15 +57,15 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=C:/MinGW/bin/gcc.exe
+CMAKE_C_COMPILER:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=C:/MinGW/bin/gcc-ar.exe
+CMAKE_C_COMPILER_AR:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=C:/MinGW/bin/gcc-ranlib.exe
+CMAKE_C_COMPILER_RANLIB:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/gcc-ranlib.exe
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -89,7 +86,7 @@ CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_C_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=C:/MinGW/bin/dlltool.exe
+CMAKE_DLLTOOL:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/dlltool.exe
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -116,10 +113,10 @@ CMAKE_GNUtoMS:BOOL=OFF
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/DynamicProject
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=C:/MinGW/bin/ld.exe
+CMAKE_LINKER:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe
 
 //Path to a program.
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/MinGW/bin/mingw32-make.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/mingw32-make.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -142,13 +139,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=C:/MinGW/bin/nm.exe
+CMAKE_NM:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/nm.exe
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=C:/MinGW/bin/objcopy.exe
+CMAKE_OBJCOPY:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/objcopy.exe
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=C:/MinGW/bin/objdump.exe
+CMAKE_OBJDUMP:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/objdump.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -160,10 +157,10 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=DynamicProject
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=C:/MinGW/bin/ranlib.exe
+CMAKE_RANLIB:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/ranlib.exe
 
 //RC compiler
-CMAKE_RC_COMPILER:FILEPATH=C:/MinGW/bin/windres.exe
+CMAKE_RC_COMPILER:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/windres.exe
 
 //Flags for Windows Resource Compiler during all build types.
 CMAKE_RC_FLAGS:STRING=
@@ -181,7 +178,7 @@ CMAKE_RC_FLAGS_RELEASE:STRING=
 CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=C:/MinGW/bin/readelf.exe
+CMAKE_READELF:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/readelf.exe
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -231,7 +228,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=C:/MinGW/bin/strip.exe
+CMAKE_STRIP:FILEPATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/strip.exe
 
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
@@ -250,9 +247,6 @@ DynamicProject_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 DynamicProject_SOURCE_DIR:STATIC=C:/Users/Aristos/Desktop/DIT/OOP/ergasia
-
-//The directory containing a CMake configuration file for Qt5.
-Qt5_DIR:PATH=Qt5_DIR-NOTFOUND
 
 
 ########################
@@ -418,9 +412,9 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //linker supports push/pop state
-_CMAKE_CXX_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+_CMAKE_CXX_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=FALSE
 //linker supports push/pop state
-_CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+_CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=FALSE
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 

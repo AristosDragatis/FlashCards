@@ -1,10 +1,12 @@
 #ifndef DATABASE_H
 #define DATABASE_H
 
-
-#include <sqlite3.h>
+extern "C" {
+    #include "../sqlite3/sqlite3.h"
+}
 #include <string>
 using namespace std;
+
 
 class Deck; // forward declaration
 class Card;

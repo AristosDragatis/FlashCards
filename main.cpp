@@ -3,7 +3,6 @@
 #include <string>
 #include <ctime>
 #include <vector>
-#include <sqlite3.h>
 #include "Database.h"
 
 // choices on how difficult a card was
@@ -274,6 +273,11 @@ public:
     }
 
 
+    ~User(){
+        counter--;
+    }
+
+
     string getName(){
         cout << name << endl;
         return this->name; 
@@ -312,6 +316,7 @@ int main() {
         cerr << "Error opening database: " << sqlite3_errmsg(DB) << endl;
         return exit;
     }
+    
 
 
     sqlite3_close(DB);

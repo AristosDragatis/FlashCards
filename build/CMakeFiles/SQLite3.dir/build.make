@@ -75,15 +75,15 @@ CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj: CMakeFiles/SQLite3.dir/flags.make
 CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj: C:/Users/Aristos/Desktop/DIT/OOP/ergasia/sqlite3/sqlite3.c
 CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj: CMakeFiles/SQLite3.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj -MF CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.obj.d -o CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.obj -c C:\Users\Aristos\Desktop\DIT\OOP\ergasia\sqlite3\sqlite3.c
+	C:\Users\Aristos\Downloads\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj -MF CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.obj.d -o CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.obj -c C:\Users\Aristos\Desktop\DIT\OOP\ergasia\sqlite3\sqlite3.c
 
 CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Aristos\Desktop\DIT\OOP\ergasia\sqlite3\sqlite3.c > CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.i
+	C:\Users\Aristos\Downloads\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Aristos\Desktop\DIT\OOP\ergasia\sqlite3\sqlite3.c > CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.i
 
 CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Aristos\Desktop\DIT\OOP\ergasia\sqlite3\sqlite3.c -o CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.s
+	C:\Users\Aristos\Downloads\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Aristos\Desktop\DIT\OOP\ergasia\sqlite3\sqlite3.c -o CMakeFiles\SQLite3.dir\sqlite3\sqlite3.c.s
 
 # Object files for target SQLite3
 SQLite3_OBJECTS = \
