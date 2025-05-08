@@ -104,10 +104,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeRCLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/FeatureTesting.cmake"
-  "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake"
-  "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake"
-  "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-C.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake"
@@ -121,7 +120,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake"
-  "C:/Users/Aristos/Desktop/DIT/oop/ergasia/CMakeLists.txt"
+  "C:/Users/Aristos/Desktop/DIT/OOP/ergasia/CMakeLists.txt"
   "CMakeFiles/3.31.0-rc1/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.0-rc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.0-rc1/CMakeRCCompiler.cmake"
@@ -147,5 +146,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/SQLite3.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
   )

@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Aristos\Desktop\DIT\oop\ergasia
+CMAKE_SOURCE_DIR = C:\Users\Aristos\Desktop\DIT\OOP\ergasia
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Aristos\Desktop\DIT\oop\ergasia\build
+CMAKE_BINARY_DIR = C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Aristos\Desktop\DIT\oop\ergasia\build\CMakeFiles C:\Users\Aristos\Desktop\DIT\oop\ergasia\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\CMakeFiles C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Aristos\Desktop\DIT\oop\ergasia\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named SQLite3
+
+# Build rule for target.
+SQLite3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SQLite3
+.PHONY : SQLite3
+
+# fast build rule for target.
+SQLite3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SQLite3.dir\build.make CMakeFiles/SQLite3.dir/build
+.PHONY : SQLite3/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -127,6 +140,30 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+Database.obj: Database.cpp.obj
+.PHONY : Database.obj
+
+# target to build an object file
+Database.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Database.cpp.obj
+.PHONY : Database.cpp.obj
+
+Database.i: Database.cpp.i
+.PHONY : Database.i
+
+# target to preprocess a source file
+Database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Database.cpp.i
+.PHONY : Database.cpp.i
+
+Database.s: Database.cpp.s
+.PHONY : Database.s
+
+# target to generate assembly for a file
+Database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Database.cpp.s
+.PHONY : Database.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -152,6 +189,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sqlite3/sqlite3.obj: sqlite3/sqlite3.c.obj
+.PHONY : sqlite3/sqlite3.obj
+
+# target to build an object file
+sqlite3/sqlite3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SQLite3.dir\build.make CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.obj
+.PHONY : sqlite3/sqlite3.c.obj
+
+sqlite3/sqlite3.i: sqlite3/sqlite3.c.i
+.PHONY : sqlite3/sqlite3.i
+
+# target to preprocess a source file
+sqlite3/sqlite3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SQLite3.dir\build.make CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.i
+.PHONY : sqlite3/sqlite3.c.i
+
+sqlite3/sqlite3.s: sqlite3/sqlite3.c.s
+.PHONY : sqlite3/sqlite3.s
+
+# target to generate assembly for a file
+sqlite3/sqlite3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SQLite3.dir\build.make CMakeFiles/SQLite3.dir/sqlite3/sqlite3.c.s
+.PHONY : sqlite3/sqlite3.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -160,10 +221,17 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... SQLite3
 	@echo ... main
+	@echo ... Database.obj
+	@echo ... Database.i
+	@echo ... Database.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... sqlite3/sqlite3.obj
+	@echo ... sqlite3/sqlite3.i
+	@echo ... sqlite3/sqlite3.s
 .PHONY : help
 
 

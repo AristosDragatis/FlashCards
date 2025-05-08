@@ -1,3 +1,4 @@
-C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/main.dir
-C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/edit_cache.dir
-C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/SQLite3.dir
+C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/main.dir
+C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/edit_cache.dir
+C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/rebuild_cache.dir

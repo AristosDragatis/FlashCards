@@ -17,7 +17,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/MinGW/bin/gcc.exe 
+      Compiler: C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/gcc.exe 
       Build flags: 
       Id flags:  
       
@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
       
       The C compiler identification is GNU, found in:
-        C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/3.31.0-rc1/CompilerIdC/a.exe
+        C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/3.31.0-rc1/CompilerIdC/a.exe
       
   -
     kind: "message-v1"
@@ -39,7 +39,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/MinGW/bin/c++.exe 
+      Compiler: C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/c++.exe 
       Build flags: 
       Id flags:  
       
@@ -50,7 +50,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/3.31.0-rc1/CompilerIdCXX/a.exe
+        C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/3.31.0-rc1/CompilerIdCXX/a.exe
       
   -
     kind: "try_compile-v1"
@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-usm0fm"
-      binary: "C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-usm0fm"
+      source: "C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-jb8dxd"
+      binary: "C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-jb8dxd"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,68 +71,70 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-usm0fm'
+        Change Dir: 'C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-jb8dxd'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_9e5f5/fast
-        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9e5f5.dir\\build.make CMakeFiles/cmTC_9e5f5.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-usm0fm'
-        Building C object CMakeFiles/cmTC_9e5f5.dir/CMakeCCompilerABI.c.obj
-        C:\\MinGW\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/mingw32-make.exe -f Makefile cmTC_08915/fast
+        C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_08915.dir\\build.make CMakeFiles/cmTC_08915.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-jb8dxd'
+        Building C object CMakeFiles/cmTC_08915.dir/CMakeCCompilerABI.c.obj
+        C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
-        COLLECT_GCC=C:\\MinGW\\bin\\gcc.exe
-        Target: mingw32
-        Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
-        Thread model: win32
-        gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
-         c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1.exe -quiet -v -iprefix c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/ C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\Aristos\\AppData\\Local\\Temp\\cct1yWXQ.s
-        GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
-        	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version 0.15
+        COLLECT_GCC=C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (x86_64-posix-seh-rev3, Built by MinGW-W64 project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_08915.dir\\'
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_08915.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccc3uVWd.s
+        GNU C17 (x86_64-posix-seh-rev3, Built by MinGW-W64 project) version 11.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"
-        ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../include"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"
-        ignoring nonexistent directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
-        ignoring duplicate directory "/mingw/include"
+        ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"
+        ignoring nonexistent directory "D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"
+        ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"
+        ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/mingw/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include
         End of search list.
-        GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
-        	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version 0.15
+        GNU C17 (x86_64-posix-seh-rev3, Built by MinGW-W64 project) version 11.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: 384cad586f05ed581a9c068b2f18b408
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
-         c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Aristos\\AppData\\Local\\Temp\\cct1yWXQ.s
-        GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28
-        COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
-        LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
-        Linking C executable cmTC_9e5f5.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9e5f5.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9e5f5.dir/objects.a
-        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_9e5f5.dir/objects.a @CMakeFiles\\cmTC_9e5f5.dir\\objects1.rsp
-        C:\\MinGW\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_9e5f5.dir/objects.a -Wl,--no-whole-archive -o cmTC_9e5f5.exe -Wl,--out-implib,libcmTC_9e5f5.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        Compiler executable checksum: 91c4f3c4bd8e22d803fb4b1665a580b8
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_08915.dir\\'
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccc3uVWd.s
+        GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37
+        COMPILER_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_08915.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_08915.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_08915.dir/objects.a
+        C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_08915.dir/objects.a @CMakeFiles\\cmTC_08915.dir\\objects1.rsp
+        C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_08915.dir/objects.a -Wl,--no-whole-archive -o cmTC_08915.exe -Wl,--out-implib,libcmTC_08915.dll.a -Wl,--major-image-version,0,--minor-image-version,0
         Using built-in specs.
-        COLLECT_GCC=C:\\MinGW\\bin\\gcc.exe
-        COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
-        Target: mingw32
-        Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls
-        Thread model: win32
-        gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
-        COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
-        LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9e5f5.exe' '-mtune=generic' '-march=i586'
-         c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\cc9Iccib.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_9e5f5.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9e5f5.dir/objects.a --no-whole-archive --out-implib libcmTC_9e5f5.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
-        collect2 version 6.3.0
-        c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\cc9Iccib.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_9e5f5.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9e5f5.dir/objects.a --no-whole-archive --out-implib libcmTC_9e5f5.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
-        GNU ld (GNU Binutils) 2.28
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9e5f5.exe' '-mtune=generic' '-march=i586'
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-usm0fm'
+        COLLECT_GCC=C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (x86_64-posix-seh-rev3, Built by MinGW-W64 project) 
+        COMPILER_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08915.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_08915.'
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -plugin C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/liblto_plugin.dll -plugin-opt=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccQYDooT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 -m i386pep -Bdynamic -o cmTC_08915.exe C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_08915.dir/objects.a --no-whole-archive --out-implib libcmTC_08915.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
+        collect2 version 11.2.0
+        C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/liblto_plugin.dll -plugin-opt=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccQYDooT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 -m i386pep -Bdynamic -o cmTC_08915.exe C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_08915.dir/objects.a --no-whole-archive --out-implib libcmTC_08915.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.37
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08915.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_08915.'
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-jb8dxd'
         
       exitCode: 0
   -
@@ -145,14 +147,14 @@ events:
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed]
+          add: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+          add: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+          add: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
         end of search list found
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include] ==> [C:/MinGW/include]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
-        implicit include dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0/include;C:/MinGW/include;C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
+        collapse include dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+        collapse include dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+        collapse include dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/include]
       
       
   -
@@ -165,109 +167,124 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-usm0fm']
+        ignore line: [Change Dir: 'C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-jb8dxd']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_9e5f5/fast]
-        ignore line: [C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9e5f5.dir\\build.make CMakeFiles/cmTC_9e5f5.dir/build]
-        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-usm0fm']
-        ignore line: [Building C object CMakeFiles/cmTC_9e5f5.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\MinGW\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/mingw32-make.exe -f Makefile cmTC_08915/fast]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_08915.dir\\build.make CMakeFiles/cmTC_08915.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-jb8dxd']
+        ignore line: [Building C object CMakeFiles/cmTC_08915.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\MinGW\\bin\\gcc.exe]
-        ignore line: [Target: mingw32]
-        ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls]
-        ignore line: [Thread model: win32]
-        ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
-        ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1.exe -quiet -v -iprefix c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/ C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\Aristos\\AppData\\Local\\Temp\\cct1yWXQ.s]
-        ignore line: [GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
-        ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.3  isl version 0.15]
+        ignore line: [COLLECT_GCC=C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (x86_64-posix-seh-rev3  Built by MinGW-W64 project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_08915.dir\\']
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_08915.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccc3uVWd.s]
+        ignore line: [GNU C17 (x86_64-posix-seh-rev3  Built by MinGW-W64 project) version 11.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"]
-        ignore line: [ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../include"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"]
-        ignore line: [ignoring nonexistent directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
-        ignore line: [ignoring duplicate directory "/mingw/include"]
+        ignore line: [ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"]
+        ignore line: [ignoring nonexistent directory "D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/mingw/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed]
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
-        ignore line: [GNU C11 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
-        ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.3  isl version 0.15]
+        ignore line: [GNU C17 (x86_64-posix-seh-rev3  Built by MinGW-W64 project) version 11.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [Compiler executable checksum: 384cad586f05ed581a9c068b2f18b408]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
-        ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Aristos\\AppData\\Local\\Temp\\cct1yWXQ.s]
-        ignore line: [GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28]
-        ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../libexec/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
-        ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../lib/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9e5f5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
-        ignore line: [Linking C executable cmTC_9e5f5.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9e5f5.dir\\link.txt --verbose=1]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9e5f5.dir/objects.a]
-        ignore line: [C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_9e5f5.dir/objects.a @CMakeFiles\\cmTC_9e5f5.dir\\objects1.rsp]
-        ignore line: [C:\\MinGW\\bin\\gcc.exe  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_9e5f5.dir/objects.a -Wl --no-whole-archive -o cmTC_9e5f5.exe -Wl --out-implib libcmTC_9e5f5.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [Compiler executable checksum: 91c4f3c4bd8e22d803fb4b1665a580b8]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_08915.dir\\']
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccc3uVWd.s]
+        ignore line: [GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37]
+        ignore line: [COMPILER_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_08915.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_08915.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_08915.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_08915.dir/objects.a]
+        ignore line: [C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_08915.dir/objects.a @CMakeFiles\\cmTC_08915.dir\\objects1.rsp]
+        ignore line: [C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\gcc.exe  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_08915.dir/objects.a -Wl --no-whole-archive -o cmTC_08915.exe -Wl --out-implib libcmTC_08915.dll.a -Wl --major-image-version 0 --minor-image-version 0]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\MinGW\\bin\\gcc.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe]
-        ignore line: [Target: mingw32]
-        ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --with-gmp=/mingw --with-mpfr --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --enable-libgomp --disable-libvtv --enable-nls]
-        ignore line: [Thread model: win32]
-        ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
-        ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../libexec/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
-        ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../lib/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9e5f5.exe' '-mtune=generic' '-march=i586']
-        link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\cc9Iccib.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_9e5f5.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9e5f5.dir/objects.a --no-whole-archive --out-implib libcmTC_9e5f5.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
-          arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe] ==> ignore
+        ignore line: [COLLECT_GCC=C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (x86_64-posix-seh-rev3  Built by MinGW-W64 project) ]
+        ignore line: [COMPILER_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08915.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_08915.']
+        link line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -plugin C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/liblto_plugin.dll -plugin-opt=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccQYDooT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 -m i386pep -Bdynamic -o cmTC_08915.exe C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_08915.dir/objects.a --no-whole-archive --out-implib libcmTC_08915.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+          arg [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
-          arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
-          arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\cc9Iccib.res] ==> ignore
+          arg [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccQYDooT.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
           arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
           arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
           arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
           arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
           arg [-plugin-opt=-pass-through=-luser32] ==> ignore
           arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-liconv] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
           arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
           arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_9e5f5.exe] ==> ignore
-          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o]
-          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o]
-          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0]
-          arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
-          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib]
-          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..]
+          arg [cmTC_08915.exe] ==> ignore
+          arg [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o] ==> obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_9e5f5.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_08915.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_9e5f5.dll.a] ==> ignore
+          arg [libcmTC_08915.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -278,34 +295,38 @@ events:
           arg [-lmoldname] ==> lib [moldname]
           arg [-lmingwex] ==> lib [mingwex]
           arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
           arg [-ladvapi32] ==> lib [advapi32]
           arg [-lshell32] ==> lib [shell32]
           arg [-luser32] ==> lib [user32]
           arg [-lkernel32] ==> lib [kernel32]
+          arg [-liconv] ==> lib [iconv]
           arg [-lmingw32] ==> lib [mingw32]
           arg [-lgcc] ==> lib [gcc]
           arg [-lgcc_eh] ==> lib [gcc_eh]
           arg [-lmoldname] ==> lib [moldname]
           arg [-lmingwex] ==> lib [mingwex]
           arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
-        ignore line: [collect2 version 6.3.0]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\cc9Iccib.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_9e5f5.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9e5f5.dir/objects.a --no-whole-archive --out-implib libcmTC_9e5f5.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
-        linker tool for 'C': c:/mingw/mingw32/bin/ld.exe
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o] ==> obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+        linker tool for 'C': ../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https:/sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe
         remove lib [gcc_eh]
         remove lib [msvcrt]
         remove lib [gcc_eh]
         remove lib [msvcrt]
-        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> [C:/MinGW/lib/crt2.o]
-        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/crtbegin.o]
-        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/crtend.o]
-        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0]
-        collapse library dir [c:/mingw/bin/../lib/gcc] ==> [C:/MinGW/lib/gcc]
-        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> [C:/MinGW/mingw32/lib]
-        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> [C:/MinGW/lib]
-        implicit libs: [mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
-        implicit objs: [C:/MinGW/lib/crt2.o;C:/MinGW/lib/gcc/mingw32/6.3.0/crtbegin.o;C:/MinGW/lib/gcc/mingw32/6.3.0/crtend.o]
-        implicit dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0;C:/MinGW/lib/gcc;C:/MinGW/mingw32/lib;C:/MinGW/lib]
+        collapse obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/lib/crt2.o]
+        collapse obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o]
+        collapse obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib]
+        implicit libs: [mingw32;gcc;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex;kernel32]
+        implicit objs: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/lib/crt2.o;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+        implicit dirs: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/lib;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib]
         implicit fwks: []
       
       
@@ -317,8 +338,28 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the C compiler's linker: "c:/mingw/mingw32/bin/ld.exe" "-v"
-      GNU ld (GNU Binutils) 2.28
+      Running the C compiler's linker: "../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https:/sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe" "-v"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https:/sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe" "-V"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https:/sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe" "--version"
+      
   -
     kind: "try_compile-v1"
     backtrace:
@@ -328,8 +369,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-oie7a1"
-      binary: "C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-oie7a1"
+      source: "C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-vi1755"
+      binary: "C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-vi1755"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -339,76 +380,76 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-oie7a1'
+        Change Dir: 'C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-vi1755'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_267ae/fast
-        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_267ae.dir\\build.make CMakeFiles/cmTC_267ae.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-oie7a1'
-        Building CXX object CMakeFiles/cmTC_267ae.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\MinGW\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/mingw32-make.exe -f Makefile cmTC_9258d/fast
+        C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9258d.dir\\build.make CMakeFiles/cmTC_9258d.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-vi1755'
+        Building CXX object CMakeFiles/cmTC_9258d.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
-        COLLECT_GCC=C:\\MinGW\\bin\\c++.exe
-        Target: mingw32
-        Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls
-        Thread model: win32
-        gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
-         c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/ C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccAwdu0z.s
-        GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
-        	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15
-        warning: MPC header version 1.0.2 differs from library version 1.0.3.
+        COLLECT_GCC=C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\c++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (x86_64-posix-seh-rev3, Built by MinGW-W64 project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9258d.dir\\'
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1plus.exe -quiet -v -iprefix C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_9258d.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccDlx0Kf.s
+        GNU C++17 (x86_64-posix-seh-rev3, Built by MinGW-W64 project) version 11.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/mingw32"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/backward"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"
-        ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../include"
-        ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"
-        ignoring nonexistent directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"
-        ignoring duplicate directory "/mingw/include"
+        ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"
+        ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"
+        ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"
+        ignoring nonexistent directory "D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"
+        ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"
+        ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/mingw/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/mingw32
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/backward
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include
-         c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include
         End of search list.
-        GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)
-        	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.2, isl version 0.15
-        warning: MPC header version 1.0.2 differs from library version 1.0.3.
+        GNU C++17 (x86_64-posix-seh-rev3, Built by MinGW-W64 project) version 11.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: af09a87986453bf79da3565f33c7648f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
-         c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccAwdu0z.s
-        GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28
-        COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
-        LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
-        Linking CXX executable cmTC_267ae.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_267ae.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_267ae.dir/objects.a
-        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_267ae.dir/objects.a @CMakeFiles\\cmTC_267ae.dir\\objects1.rsp
-        C:\\MinGW\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_267ae.dir/objects.a -Wl,--no-whole-archive -o cmTC_267ae.exe -Wl,--out-implib,libcmTC_267ae.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        Compiler executable checksum: d7afaace9697386afb994a04753f738f
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9258d.dir\\'
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccDlx0Kf.s
+        GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37
+        COMPILER_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_9258d.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9258d.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9258d.dir/objects.a
+        C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_9258d.dir/objects.a @CMakeFiles\\cmTC_9258d.dir\\objects1.rsp
+        C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_9258d.dir/objects.a -Wl,--no-whole-archive -o cmTC_9258d.exe -Wl,--out-implib,libcmTC_9258d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
         Using built-in specs.
-        COLLECT_GCC=C:\\MinGW\\bin\\c++.exe
-        COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe
-        Target: mingw32
-        Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls
-        Thread model: win32
-        gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) 
-        COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/
-        LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_267ae.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
-         c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccE6umZR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_267ae.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_267ae.dir/objects.a --no-whole-archive --out-implib libcmTC_267ae.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
-        collect2 version 6.3.0
-        c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccE6umZR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_267ae.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_267ae.dir/objects.a --no-whole-archive --out-implib libcmTC_267ae.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
-        GNU ld (GNU Binutils) 2.28
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_267ae.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-oie7a1'
+        COLLECT_GCC=C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\c++.exe
+        COLLECT_LTO_WRAPPER=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (x86_64-posix-seh-rev3, Built by MinGW-W64 project) 
+        COMPILER_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9258d.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_9258d.'
+         C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -plugin C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/liblto_plugin.dll -plugin-opt=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\cc7YLXso.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 -m i386pep -Bdynamic -o cmTC_9258d.exe C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9258d.dir/objects.a --no-whole-archive --out-implib libcmTC_9258d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
+        collect2 version 11.2.0
+        C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/liblto_plugin.dll -plugin-opt=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\cc7YLXso.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 -m i386pep -Bdynamic -o cmTC_9258d.exe C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9258d.dir/objects.a --no-whole-archive --out-implib libcmTC_9258d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.37
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9258d.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_9258d.'
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-vi1755'
         
       exitCode: 0
   -
@@ -421,20 +462,20 @@ events:
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/mingw32]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/backward]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include]
-          add: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed]
+          add: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++]
+          add: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32]
+          add: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward]
+          add: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+          add: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+          add: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
         end of search list found
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/mingw32] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include/c++/backward] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../include] ==> [C:/MinGW/include]
-        collapse include dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/include-fixed] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
-        implicit include dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++;C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32;C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward;C:/MinGW/lib/gcc/mingw32/6.3.0/include;C:/MinGW/include;C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed]
+        collapse include dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++]
+        collapse include dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32]
+        collapse include dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward]
+        collapse include dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+        collapse include dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+        collapse include dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/include]
       
       
   -
@@ -447,121 +488,130 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-oie7a1']
+        ignore line: [Change Dir: 'C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-vi1755']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_267ae/fast]
-        ignore line: [C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_267ae.dir\\build.make CMakeFiles/cmTC_267ae.dir/build]
-        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Aristos/Desktop/DIT/oop/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-oie7a1']
-        ignore line: [Building CXX object CMakeFiles/cmTC_267ae.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\MinGW\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/mingw32-make.exe -f Makefile cmTC_9258d/fast]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9258d.dir\\build.make CMakeFiles/cmTC_9258d.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Aristos/Desktop/DIT/OOP/ergasia/build/CMakeFiles/CMakeScratch/TryCompile-vi1755']
+        ignore line: [Building CXX object CMakeFiles/cmTC_9258d.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\MinGW\\bin\\c++.exe]
-        ignore line: [Target: mingw32]
-        ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls]
-        ignore line: [Thread model: win32]
-        ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
-        ignore line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/cc1plus.exe -quiet -v -iprefix c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/ C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccAwdu0z.s]
-        ignore line: [GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
-        ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.2  isl version 0.15]
-        ignore line: [warning: MPC header version 1.0.2 differs from library version 1.0.3.]
+        ignore line: [COLLECT_GCC=C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\c++.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (x86_64-posix-seh-rev3  Built by MinGW-W64 project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9258d.dir\\']
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1plus.exe -quiet -v -iprefix C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_9258d.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccDlx0Kf.s]
+        ignore line: [GNU C++17 (x86_64-posix-seh-rev3  Built by MinGW-W64 project) version 11.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/mingw32"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include/c++/backward"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include"]
-        ignore line: [ignoring duplicate directory "/mingw/lib/gcc/mingw32/6.3.0/../../../../include"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../include"]
-        ignore line: [ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/include-fixed"]
-        ignore line: [ignoring nonexistent directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"]
-        ignore line: [ignoring duplicate directory "/mingw/include"]
+        ignore line: [ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"]
+        ignore line: [ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"]
+        ignore line: [ignoring nonexistent directory "D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/mingw/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/mingw32]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/backward]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include]
-        ignore line: [ c:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed]
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++]
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward]
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
-        ignore line: [GNU C++14 (MinGW.org GCC-6.3.0-1) version 6.3.0 (mingw32)]
-        ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.2  isl version 0.15]
-        ignore line: [warning: MPC header version 1.0.2 differs from library version 1.0.3.]
+        ignore line: [GNU C++17 (x86_64-posix-seh-rev3  Built by MinGW-W64 project) version 11.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [Compiler executable checksum: af09a87986453bf79da3565f33c7648f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
-        ignore line: [ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccAwdu0z.s]
-        ignore line: [GNU assembler version 2.28 (mingw32) using BFD version (GNU Binutils) 2.28]
-        ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../libexec/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
-        ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../lib/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_267ae.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
-        ignore line: [Linking CXX executable cmTC_267ae.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_267ae.dir\\link.txt --verbose=1]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_267ae.dir/objects.a]
-        ignore line: [C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_267ae.dir/objects.a @CMakeFiles\\cmTC_267ae.dir\\objects1.rsp]
-        ignore line: [C:\\MinGW\\bin\\c++.exe  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_267ae.dir/objects.a -Wl --no-whole-archive -o cmTC_267ae.exe -Wl --out-implib libcmTC_267ae.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [Compiler executable checksum: d7afaace9697386afb994a04753f738f]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9258d.dir\\']
+        ignore line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccDlx0Kf.s]
+        ignore line: [GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37]
+        ignore line: [COMPILER_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_9258d.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_9258d.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9258d.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9258d.dir/objects.a]
+        ignore line: [C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_9258d.dir/objects.a @CMakeFiles\\cmTC_9258d.dir\\objects1.rsp]
+        ignore line: [C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\c++.exe  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_9258d.dir/objects.a -Wl --no-whole-archive -o cmTC_9258d.exe -Wl --out-implib libcmTC_9258d.dll.a -Wl --major-image-version 0 --minor-image-version 0]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\MinGW\\bin\\c++.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe]
-        ignore line: [Target: mingw32]
-        ignore line: [Configured with: ../src/gcc-6.3.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c c++ objc obj-c++ fortran ada --with-pkgversion='MinGW.org GCC-6.3.0-1' --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-tune=generic --enable-libgomp --disable-libvtv --enable-nls]
-        ignore line: [Thread model: win32]
-        ignore line: [gcc version 6.3.0 (MinGW.org GCC-6.3.0-1) ]
-        ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../libexec/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/]
-        ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/6.3.0/]
-        ignore line: [c:/mingw/bin/../lib/gcc/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib/]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_267ae.exe' '-shared-libgcc' '-mtune=generic' '-march=i586']
-        link line: [ c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccE6umZR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_267ae.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_267ae.dir/objects.a --no-whole-archive --out-implib libcmTC_267ae.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
-          arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe] ==> ignore
+        ignore line: [COLLECT_GCC=C:\\Users\\Aristos\\Downloads\\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\\mingw64\\bin\\c++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (x86_64-posix-seh-rev3  Built by MinGW-W64 project) ]
+        ignore line: [COMPILER_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9258d.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_9258d.']
+        link line: [ C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -plugin C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/liblto_plugin.dll -plugin-opt=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\cc7YLXso.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 -m i386pep -Bdynamic -o cmTC_9258d.exe C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9258d.dir/objects.a --no-whole-archive --out-implib libcmTC_9258d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+          arg [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
-          arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
-          arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccE6umZR.res] ==> ignore
+          arg [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\cc7YLXso.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
           arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
           arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
           arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
           arg [-plugin-opt=-pass-through=-luser32] ==> ignore
           arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-liconv] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
           arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=D:/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
-          arg [-u] ==> ignore
-          arg [___register_frame_info] ==> ignore
-          arg [-u] ==> ignore
-          arg [___deregister_frame_info] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_267ae.exe] ==> ignore
-          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o]
-          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o]
-          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0]
-          arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
-          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib]
-          arg [-Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..]
+          arg [cmTC_9258d.exe] ==> ignore
+          arg [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o] ==> obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LC:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..] ==> dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_267ae.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_9258d.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_267ae.dll.a] ==> ignore
+          arg [libcmTC_9258d.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -573,32 +623,36 @@ events:
           arg [-lmoldname] ==> lib [moldname]
           arg [-lmingwex] ==> lib [mingwex]
           arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
           arg [-ladvapi32] ==> lib [advapi32]
           arg [-lshell32] ==> lib [shell32]
           arg [-luser32] ==> lib [user32]
           arg [-lkernel32] ==> lib [kernel32]
+          arg [-liconv] ==> lib [iconv]
           arg [-lmingw32] ==> lib [mingw32]
           arg [-lgcc_s] ==> lib [gcc_s]
           arg [-lgcc] ==> lib [gcc]
           arg [-lmoldname] ==> lib [moldname]
           arg [-lmingwex] ==> lib [mingwex]
           arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
-        ignore line: [collect2 version 6.3.0]
-        ignore line: [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aristos\\AppData\\Local\\Temp\\ccE6umZR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_267ae.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. -v --whole-archive CMakeFiles\\cmTC_267ae.dir/objects.a --no-whole-archive --out-implib libcmTC_267ae.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o]
-        linker tool for 'CXX': c:/mingw/mingw32/bin/ld.exe
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o] ==> obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+        linker tool for 'CXX': ../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https:/sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
-        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o] ==> [C:/MinGW/lib/crt2.o]
-        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/crtbegin.o]
-        collapse obj [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0/crtend.o]
-        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0] ==> [C:/MinGW/lib/gcc/mingw32/6.3.0]
-        collapse library dir [c:/mingw/bin/../lib/gcc] ==> [C:/MinGW/lib/gcc]
-        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib] ==> [C:/MinGW/mingw32/lib]
-        collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../..] ==> [C:/MinGW/lib]
-        implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex]
-        implicit objs: [C:/MinGW/lib/crt2.o;C:/MinGW/lib/gcc/mingw32/6.3.0/crtbegin.o;C:/MinGW/lib/gcc/mingw32/6.3.0/crtend.o]
-        implicit dirs: [C:/MinGW/lib/gcc/mingw32/6.3.0;C:/MinGW/lib/gcc;C:/MinGW/mingw32/lib;C:/MinGW/lib]
+        collapse obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/lib/crt2.o]
+        collapse obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o]
+        collapse obj [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../..] ==> [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc_s;gcc;moldname;mingwex;kernel32]
+        implicit objs: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/lib/crt2.o;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o]
+        implicit dirs: [C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib/gcc;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/x86_64-w64-mingw32/lib;C:/Users/Aristos/Downloads/x86_64-11.2.0-release-posix-seh-rt_v9-rev3/mingw64/lib]
         implicit fwks: []
       
       
@@ -610,6 +664,26 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the CXX compiler's linker: "c:/mingw/mingw32/bin/ld.exe" "-v"
-      GNU ld (GNU Binutils) 2.28
+      Running the CXX compiler's linker: "../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https:/sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe" "-v"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https:/sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe" "-V"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https:/sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe" "--version"
+      
 ...

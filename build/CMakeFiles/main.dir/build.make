@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Aristos\Desktop\DIT\oop\ergasia
+CMAKE_SOURCE_DIR = C:\Users\Aristos\Desktop\DIT\OOP\ergasia
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Aristos\Desktop\DIT\oop\ergasia\build
+CMAKE_BINARY_DIR = C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -72,32 +72,51 @@ CMakeFiles/main.dir/codegen:
 .PHONY : CMakeFiles/main.dir/codegen
 
 CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/main.cpp.obj: C:/Users/Aristos/Desktop/DIT/oop/ergasia/main.cpp
+CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
+CMakeFiles/main.dir/main.cpp.obj: C:/Users/Aristos/Desktop/DIT/OOP/ergasia/main.cpp
 CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Aristos\Desktop\DIT\oop\ergasia\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.obj -MF CMakeFiles\main.dir\main.cpp.obj.d -o CMakeFiles\main.dir\main.cpp.obj -c C:\Users\Aristos\Desktop\DIT\oop\ergasia\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.obj"
+	C:\Users\Aristos\Downloads\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.obj -MF CMakeFiles\main.dir\main.cpp.obj.d -o CMakeFiles\main.dir\main.cpp.obj -c C:\Users\Aristos\Desktop\DIT\OOP\ergasia\main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Aristos\Desktop\DIT\oop\ergasia\main.cpp > CMakeFiles\main.dir\main.cpp.i
+	C:\Users\Aristos\Downloads\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Aristos\Desktop\DIT\OOP\ergasia\main.cpp > CMakeFiles\main.dir\main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Aristos\Desktop\DIT\oop\ergasia\main.cpp -o CMakeFiles\main.dir\main.cpp.s
+	C:\Users\Aristos\Downloads\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Aristos\Desktop\DIT\OOP\ergasia\main.cpp -o CMakeFiles\main.dir\main.cpp.s
+
+CMakeFiles/main.dir/Database.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Database.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
+CMakeFiles/main.dir/Database.cpp.obj: C:/Users/Aristos/Desktop/DIT/OOP/ergasia/Database.cpp
+CMakeFiles/main.dir/Database.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/Database.cpp.obj"
+	C:\Users\Aristos\Downloads\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Database.cpp.obj -MF CMakeFiles\main.dir\Database.cpp.obj.d -o CMakeFiles\main.dir\Database.cpp.obj -c C:\Users\Aristos\Desktop\DIT\OOP\ergasia\Database.cpp
+
+CMakeFiles/main.dir/Database.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/Database.cpp.i"
+	C:\Users\Aristos\Downloads\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Aristos\Desktop\DIT\OOP\ergasia\Database.cpp > CMakeFiles\main.dir\Database.cpp.i
+
+CMakeFiles/main.dir/Database.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/Database.cpp.s"
+	C:\Users\Aristos\Downloads\x86_64-11.2.0-release-posix-seh-rt_v9-rev3\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Aristos\Desktop\DIT\OOP\ergasia\Database.cpp -o CMakeFiles\main.dir\Database.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.cpp.obj"
+"CMakeFiles/main.dir/main.cpp.obj" \
+"CMakeFiles/main.dir/Database.cpp.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main.exe: CMakeFiles/main.dir/main.cpp.obj
+main.exe: CMakeFiles/main.dir/Database.cpp.obj
 main.exe: CMakeFiles/main.dir/build.make
+main.exe: libSQLite3.a
 main.exe: CMakeFiles/main.dir/linkLibs.rsp
 main.exe: CMakeFiles/main.dir/objects1.rsp
 main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Aristos\Desktop\DIT\oop\ergasia\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +128,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Aristos\Desktop\DIT\oop\ergasia C:\Users\Aristos\Desktop\DIT\oop\ergasia C:\Users\Aristos\Desktop\DIT\oop\ergasia\build C:\Users\Aristos\Desktop\DIT\oop\ergasia\build C:\Users\Aristos\Desktop\DIT\oop\ergasia\build\CMakeFiles\main.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Aristos\Desktop\DIT\OOP\ergasia C:\Users\Aristos\Desktop\DIT\OOP\ergasia C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build C:\Users\Aristos\Desktop\DIT\OOP\ergasia\build\CMakeFiles\main.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/main.dir/depend
 
