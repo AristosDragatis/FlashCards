@@ -1,0 +1,114 @@
+Σημειώσεις σχετικά με την εργασία .
+FlashCards σε C++
+
+if we click add in the main window a new window (add) appears.
+Adding cards to notes
+
+μια πιθανή υλοποιηση στη main είναι καθε φορα που ο χρήστης δίνει Input μια ερωτηση η απαντηση σε καρτα , το input να δίνεται ως παραμετρο σε μια function Input() της Card και να αποθηκεύεται στη μεταβλητη με χρήση setter
+
+
+Δημιουργία καρτών: Κάθε κάρτα να έχει μία ερώτηση και μία απάντηση και οι χρήστες να μπορούν να δημιουργούν, να επεξεργάζονται και να διαγράφουν κάρτες.
+Η ΠΡΟΣΘΗΚΗ ΚΑΡΤΑΣ ΜΑΣ ΛΕΕΙ ΚΑΙ ΣΕ ΠΟΙΑ ΤΡΑΠΟΥΛΑ ΘΑ ΠΑΕΙ;
+μια ή πολλες
+
+Δημιουργία συλλογών καρτών (decks): Οι κάρτες να μπορούν να οργανωθούν σε θεματικές συλλογές και
+κάθε συλλογή να μπορεί να περιέχει πολλαπλές κάρτες, ενώ κάθε κάρτα να μπορεί να ανήκει σε μία ή περισσότερες συλλογές.
+
+
+
+
+Mελέτη με χρονική επανάληψη: Κατά τη μελέτη, ο χρήστης να βλέπει μία κάρτα και απαντά αν την γνωρίζει ή όχι. Ανάλογα με την απάντηση, το πρόγραμμα θα προγραμματίζει την επανεμφάνιση της κάρτας
+(σε μικρότερο ή μεγαλύτερο χρονικό διάστημα). Η στρατηγική επανάληψης μπορεί να είναι απλή (π.χ., να αυξάνει το χρόνο επανάληψης ανάλογα με τον αριθμό των σωστών απαντήσεων)
+
+
+SQLITE για αποθηκευση 
+η καρτες θα αποθηκεύονται σε μια βαση Card με ονοματα id, question , answer
+
+
+************* ΝΑ δω παλι σύνθεση το 7 κεφ.
+
+θελω οταν δημιουργώ ενα deck να του δινω και ενα ονομα.
+
+double tstart = clock();
+
+
+double tend = clock();
+
+double time = (tend - tstart) / (double)CLOCKS_PER_SEC;
+
+// deleted from Card -> no need to have it 
+// show question
+void ShowQuestion(){
+    if(Question.empty()){
+        cerr << "This field must not be empty" << endl;
+        return;
+    }   
+    else
+        cout << "Question: " <<  getQuestion() << endl;
+}
+
+// show answer
+void ShowAnswer(){
+    if(!Answer.empty())
+        cout << "Answer: " <<  getAnswer() << endl;
+    else
+        cout << " " << endl;
+}
+
+
+
+--- update 3/2/2025 
+added repeat strategy
+
+TO DO:
+add sqlite3 implementation
+add wxWidgets implementation
+
+
+**** λογικά τα δεδομενα (καρτες που διαβαστηκαν και χρονος) τα κρατάει για κάθε μερα ξεχωριστα -> να το δω
+βαζω τα βασικά για αρχή
+database:
+
+id
+question 
+answer
+deckname
+total_cards
+total_time
+time_per_card
+
+
+***basic sqlite3 functions and code***
+
+#DEFINES 
+static int createDB(const char* s);
+static int createTable(const char* s);
+
+MAIN FUNCTION
+const char* dir = "C:\\MyDatabase\\FLASHCARDS.db";
+sqlite3* DB;
+createDB(dir);
+createTable(dir);
+
+
+
+IMPLEMENTATION OF EACH FUNCTION (under main function)
+
+***CREATEDB
+static int createDB(const char* s){
+    sqlite* DB;
+    int exit = 0;
+
+    exit = sqlite3_open(s, &DB);
+
+
+    sqlite3_close(DB);
+
+    return 0;
+}
+
+
+
+
+
+
